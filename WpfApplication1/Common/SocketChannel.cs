@@ -8,29 +8,19 @@
     
     public class SocketChannel
     {
-        // The port number for the remote device.  
-        private const int port = 11000;
-
         // ManualResetEvent instances signal completion.  
-
         private static readonly ManualResetEvent AllDone = new ManualResetEvent(false);
         private static readonly ManualResetEvent connectDone = new ManualResetEvent(false);
-
         private static readonly ManualResetEvent sendDone = new ManualResetEvent(false);
-
         private static readonly ManualResetEvent receiveDone = new ManualResetEvent(false);
 
         // The response from the remote device.  
         private static string response = string.Empty;
-
         private Socket socket;
-
         private IPEndPoint remoteEndPoint;
 
         public SocketChannel(string ipAddress, int port)
-        {
-            ////var ipHostInfo = Dns.GetHostEntry("host.contoso.com");
-            ////var ipAddress = ipHostInfo.AddressList[0];
+        {   
             var parsedIpAddress = IPAddress.Parse(ipAddress);
             remoteEndPoint = new IPEndPoint(parsedIpAddress, port);
             
