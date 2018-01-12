@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketLayer", "SocketLayer\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServer", "SocketServer\SocketServer.csproj", "{8CC61D5D-3F1D-4575-AA5F-90998485A87F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{14EC66B8-A2CD-4FBD-9E6C-C45C04095A95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{377157DA-E18A-4C85-A2A0-1C8BDC50D576}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,11 +35,16 @@ Global
 		{8CC61D5D-3F1D-4575-AA5F-90998485A87F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CC61D5D-3F1D-4575-AA5F-90998485A87F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CC61D5D-3F1D-4575-AA5F-90998485A87F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{377157DA-E18A-4C85-A2A0-1C8BDC50D576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{377157DA-E18A-4C85-A2A0-1C8BDC50D576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{377157DA-E18A-4C85-A2A0-1C8BDC50D576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{377157DA-E18A-4C85-A2A0-1C8BDC50D576}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{07B5EA71-E77F-4CB7-A0BB-F1097653706D} = {CA5BD1BC-0C03-433F-ADA2-796E03F26DBD}
+		{377157DA-E18A-4C85-A2A0-1C8BDC50D576} = {14EC66B8-A2CD-4FBD-9E6C-C45C04095A95}
 	EndGlobalSection
 EndGlobal
