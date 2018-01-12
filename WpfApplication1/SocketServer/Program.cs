@@ -107,8 +107,8 @@
 
         private static void StartListening()
         {
-            var ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
-            var ipAddress = ipHostInfo.AddressList[0];
+            ////var ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());
+            var ipAddress = IPAddress.Parse("127.0.0.1"); ////ipHostInfo.AddressList[0];
             var localEndPoint = new IPEndPoint(ipAddress, 11000);
 
             var listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);

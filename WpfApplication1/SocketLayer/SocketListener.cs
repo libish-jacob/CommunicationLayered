@@ -45,8 +45,10 @@
                 // Establish the remote endpoint for the socket.  
                 // The name of the   
                 // remote device is "host.contoso.com".  
-                var ipHostInfo = Dns.GetHostEntry("host.contoso.com");
-                var ipAddress = ipHostInfo.AddressList[0];
+                ////var ipHostInfo = Dns.GetHostEntry("host.contoso.com");
+                ////var ipAddress = ipHostInfo.AddressList[0];
+
+                var ipAddress = IPAddress.Parse("127.0.0.1");
                 var remoteEP = new IPEndPoint(ipAddress, port);
 
                 // Create a TCP/IP socket.  
@@ -142,6 +144,7 @@
                     {
                         response = state.sb.ToString();
                     }
+
                     // Signal that all bytes have been received.  
                     receiveDone.Set();
                 }
@@ -181,7 +184,7 @@
             }
         }
 
-        public static int Main(String[] args)
+        public static int SendMessage()
         {
             StartClient();
             return 0;

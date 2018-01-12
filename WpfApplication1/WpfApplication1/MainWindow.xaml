@@ -8,5 +8,21 @@
     Width="525"
     Height="350"
     mc:Ignorable="d">
-    <Grid />
+    <Grid>
+        <Button
+            x:Name="SendButton"
+            Width="100"
+            Height="50"
+            Margin="231.494,148,210.506,151.04"
+            Click="SendButton_Click"
+            Content="Send Test"
+            d:LayoutOverrides="Height">
+            <Button.Background>
+                <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Offset="0" Color="Black" />
+                    <GradientStop Offset="1" Color="#FFCD9191" />
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
 </Window>
